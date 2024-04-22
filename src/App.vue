@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>TESTE CYPRESS FELIPE MOURÃO</h1>
+  <HelloWorld msg="Conhecendo o Cypress com Vuejs!" />
+  <input class="hello-world" />
+  <button @click="hello">Clique aqui</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  methods: {
+    hello() {
+      alert("Tchau!");
+    },
+  },
+};
 </script>
 
 <style>
